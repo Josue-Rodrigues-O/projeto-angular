@@ -1,0 +1,16 @@
+#container{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    background-color: blueviolet;
+}
+#login{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+#logon{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
