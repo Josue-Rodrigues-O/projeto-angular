@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './barra-superior.component.css'
 })
 export class BarraSuperiorComponent {
-
+  public usuarioEstaLogado: boolean = false
 }
