@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardCursoComponent } from "../../componentes/card-curso/card-curso.component";
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-pagina-meus-cursos',
@@ -9,5 +10,9 @@ import { CardCursoComponent } from "../../componentes/card-curso/card-curso.comp
     imports: [CardCursoComponent]
 })
 export class PaginaMeusCursosComponent {
+    constructor(private route: Router) {}
 
+    aoClicarAdicionar(){
+        this.route.navigate(['/marketplace'])
+    }
 }

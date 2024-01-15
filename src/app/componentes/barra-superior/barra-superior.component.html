@@ -4,8 +4,8 @@
     <span class="material-symbols-outlined">menu</span>
     <span id="titulo">Dev Cursos</span>
     @if (usuarioEstaLogado) {
-        <button id="menu-usuario">JO</button>
+        <button id="menu-usuario" (click)="aoClicarEmCadastrar()">JO</button>
     }@else {
-        <button id="botao-cadasrar">Cadastrar</button>
+        <button id="botao-cadasrar" (click)="aoClicarEmCadastrar()">Cadastrar</button>
     }
 </div>
