@@ -1,11 +1,28 @@
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<div id="container">
-    <span class="material-symbols-outlined">menu</span>
-    <span id="titulo">Dev Cursos</span>
-    @if (usuarioEstaLogado) {
+
+<div id="main">
+    <div id="container">
+        <span class="material-symbols-outlined" (click)="aoClicarAbreMenuLateral()">menu</span>
+        <span id="titulo">Dev Cursos</span>
+        @if (usuarioEstaLogado) {
         <button id="menu-usuario" (click)="aoClicarEmCadastrar()">JO</button>
-    }@else {
+        }@else {
         <button id="botao-cadasrar" (click)="aoClicarEmCadastrar()">Cadastrar</button>
-    }
+        }
+    </div>
+    <div [className]="menuLateral" id="menuLateral">
+        <div class="container-menu-lateral">
+            <span class="material-symbols-outlined">home</span>
+            @if (menuAberto) {
+                <span>Meus cursos</span>
+            }
+        </div>
+        <div class="container-menu-lateral">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            @if (menuAberto) {
+                <span>Marktplace</span>
+            }
+        </div>
+    </div>
 </div>

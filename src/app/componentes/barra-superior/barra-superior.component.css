@@ -63,3 +63,32 @@
     box-shadow: 0px 0px 15px -8px black;
     cursor: pointer;
 }
+
+.menu-lateral {
+    background-color: #FFFFFF;
+    width: 70px;
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-aberto {
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 100vh;
+}
+
+#menuLateral {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 0px #bdbbbb
+}
+
+.container-menu-lateral {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
