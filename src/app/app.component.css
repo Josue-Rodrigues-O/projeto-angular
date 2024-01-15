@@ -7,3 +7,8 @@ app-barra-superior {
 #barra-superior {
     height: 60px;
 }
+
+#container{
+    display: flex;
+    flex-direction: column;
+}

@@ -7,9 +7,6 @@ html , body, app-root {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-app-root {
     background-color: #F0F2F5;
 }
 
