@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BarraSuperiorComponent } from '../../componentes/barra-superior/barra-superior.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-login',
@@ -9,5 +10,9 @@ import { BarraSuperiorComponent } from '../../componentes/barra-superior/barra-s
   styleUrl: './pagina-login.component.css'
 })
 export class PaginaLoginComponent {
+  constructor(private route: Router){}
 
+  aoClicarEmAcessar(){
+    this.route.navigate(['/meus-cursos'])
+  }
 }

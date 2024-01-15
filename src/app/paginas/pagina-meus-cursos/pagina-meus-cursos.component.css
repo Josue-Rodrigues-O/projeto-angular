@@ -1,0 +1,18 @@
+#container {
+    height: calc(100% - 60px);
+    padding: 80px;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#container-meus-cursos{
+    display: flex;
+}
+
+#meus-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
