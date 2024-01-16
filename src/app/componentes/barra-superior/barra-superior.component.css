@@ -6,7 +6,7 @@
 #container {
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     box-shadow: 0px 1px 10px -9px black;
     background-color: #FFFFFF;
@@ -22,7 +22,7 @@
     margin: 10px;
 }
 
-#botao-cadasrar{
+#botao-cadasrar {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
@@ -36,6 +36,11 @@
 
 #titulo {
     font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .material-symbols-outlined {
@@ -55,40 +60,20 @@
     font-size: 28px;
     margin: 10px;
 }
+
 .material-symbols-outlined:hover {
     box-shadow: 0px 0px 15px -8px black;
     cursor: pointer;
 }
+
 #botao-cadasrar:hover {
     box-shadow: 0px 0px 15px -8px black;
     cursor: pointer;
 }
 
-.menu-lateral {
-    background-color: #FFFFFF;
-    width: 70px;
-    height: 100vh;
-}
-
-#main {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-aberto {
-    background-color: #FFFFFF;
-    width: 300px;
-    height: 100vh;
-}
-
-#menuLateral {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 0px #bdbbbb
-}
-
-.container-menu-lateral {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
+app-menu-lateral {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
 }

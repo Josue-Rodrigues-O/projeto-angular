@@ -1,10 +1,15 @@
 <div id="container">
     <div id="div-login">
+        <h3>LOGIN</h3>
         <form action="">
             <input type="email" id="email" placeholder="Email">
-            <input type="password" id="senha" placeholder="Senha">
+            <div id="div-senha">
+                <input type="password" id="senha" placeholder="Senha">
+                <div id="esqueci-senha">
+                    <a href="">Esqueceu a senha?</a>
+                </div>
+            </div>
         </form>
-        <a href="">Esqueceu a senha?</a>
         <button (click)="aoClicarEmAcessar()">Entrar</button>
     </div>
 </div>

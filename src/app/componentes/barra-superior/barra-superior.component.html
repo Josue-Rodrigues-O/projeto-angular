@@ -3,7 +3,6 @@
 
 <div id="main">
     <div id="container">
-        <span class="material-symbols-outlined" (click)="aoClicarAbreMenuLateral()">menu</span>
         <span id="titulo">Dev Cursos</span>
         @if (usuarioEstaLogado) {
         <button id="menu-usuario" (click)="aoClicarEmCadastrar()">JO</button>
@@ -11,18 +10,5 @@
         <button id="botao-cadasrar" (click)="aoClicarEmCadastrar()">Cadastrar</button>
         }
     </div>
-    <div [className]="menuLateral" id="menuLateral">
-        <div class="container-menu-lateral">
-            <span class="material-symbols-outlined">home</span>
-            @if (menuAberto) {
-                <span>Meus cursos</span>
-            }
-        </div>
-        <div class="container-menu-lateral">
-            <span class="material-symbols-outlined">shopping_cart</span>
-            @if (menuAberto) {
-                <span>Marktplace</span>
-            }
-        </div>
-    </div>
+    <app-menu-lateral></app-menu-lateral>
 </div>

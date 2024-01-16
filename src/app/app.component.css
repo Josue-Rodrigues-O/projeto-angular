@@ -12,3 +12,10 @@ app-barra-superior {
     display: flex;
     flex-direction: column;
 }
+
+app-menu-lateral {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+}

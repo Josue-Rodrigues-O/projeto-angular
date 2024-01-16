@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuLateralComponent } from "../menu-lateral/menu-lateral.component";
 
 @Component({
-  selector: 'app-barra-superior',
-  standalone: true,
-  imports: [],
-  templateUrl: './barra-superior.component.html',
-  styleUrl: './barra-superior.component.css'
+    selector: 'app-barra-superior',
+    standalone: true,
+    templateUrl: './barra-superior.component.html',
+    styleUrl: './barra-superior.component.css',
+    imports: [MenuLateralComponent]
 })
 export class BarraSuperiorComponent {
-  menuLateral = "menu-lateral"
-  menuAberto = false
 
+  menuLateralAberto: boolean = false
   constructor(private route: Router) { }
 
   public usuarioEstaLogado: boolean = false
@@ -21,12 +21,6 @@ export class BarraSuperiorComponent {
   }
 
   aoClicarAbreMenuLateral() {
-    if (!this.menuAberto) {
-      this.menuLateral = "menu-aberto"
-      this.menuAberto = true
-    } else {
-      this.menuLateral = "menu-lateral"
-      this.menuAberto = false
-    }
+    this.menuLateralAberto = !this.menuLateralAberto
   }
 }
