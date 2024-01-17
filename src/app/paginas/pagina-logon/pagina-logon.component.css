@@ -25,11 +25,10 @@ form {
 }
 
 input {
-    margin: 0;
     padding: 0;
     width: 82.5%;
     height: 43px;
-    margin: 10px;
+    margin: 5px;
     padding-left: 10px;
     outline: 0px;
     border-radius: 8px;
@@ -44,7 +43,8 @@ button {
     border: none;
     width: 85.5%;
     height: 45px;
-    margin: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
     padding: 0;
 }
 

@@ -5,18 +5,13 @@
     padding-left: 0;
 }
 
-.container-menu-lateral:hover{
-    box-shadow: 0px 0px 15px -8px black;
+.container-menu-lateral:hover {
     cursor: pointer;
     padding-right: 10px;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 700,
-        'GRAD' 200,
-        'opsz' 48;
+#shopping_cart,
+#home {
     border-radius: 20%;
     background-color: unset;
     color: black;
@@ -26,15 +21,13 @@
     justify-content: center;
     align-items: center;
     font-size: 28px;
-    margin: 0;
-    padding: 0;
 }
 
 .menu-aberto {
     width: 190px;
 }
 
-.texto-menu{
+.texto-menu {
     margin-left: 10px;
     display: none;
 }
@@ -53,8 +46,9 @@
 
 
 #container:hover {
-     width: 190px;
-     .texto-menu{
+    width: 190px;
+
+    .texto-menu {
         display: block;
-     }
+    }
 }

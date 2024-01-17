@@ -23,4 +23,8 @@ export class BarraSuperiorComponent {
   aoClicarAbreMenuLateral() {
     this.menuLateralAberto = !this.menuLateralAberto
   }
+
+  aoClicarNoTitulo() {
+    this.route.navigate(['/'])
+  }
 }

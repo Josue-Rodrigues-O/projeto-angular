@@ -1,0 +1,56 @@
+#container {
+    height: calc(100% - 60px);
+    padding: 0;
+    padding-left: 65px;
+}
+
+#titulo-container,
+#botao-adicionar-container {
+    font-size: 40px;
+    margin: 20px;
+    padding: 0;
+    color: white;
+    background: none;
+}
+
+#corpo {
+    display: flex;
+    flex-direction: column;
+}
+
+#lista-titulo-videos {
+    max-height: 100vh;
+    overflow: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#cabecalho-lista-videos {
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 0;
+    background-color: white;
+}
+
+#titulo-video {
+    padding: 20px;
+    padding-left: 3%;
+    padding-right: 0;
+}
+
+#area-video {
+    width: 70%;
+}
+
+iframe{
+    width: 700px;
+    height: 400px;
+}
+
+#area-curso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}

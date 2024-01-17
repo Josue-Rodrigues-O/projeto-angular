@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-cursos-marketplace',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './card-cursos-marketplace.component.css'
 })
 export class CardCursosMarketplaceComponent {
-
+  constructor(private route: Router) {}
+  aoClicarNoCard() {
+    this.route.navigate(['detalhes-do-curso'])
+  }
 }

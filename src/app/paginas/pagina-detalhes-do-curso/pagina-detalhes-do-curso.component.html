@@ -1,0 +1,18 @@
+<div id="container">
+    <div id="corpo">
+        <header id="cabecalho-lista-videos">Curso de HTML5 e CSS3 - Módulo 1</header>
+        <div id="area-curso">
+            <div id="lista-titulo-videos">
+                @for (item of listaDeVideos; track $index) {
+                <div id="titulo-video" (click)="aoClicarNoTitulo(item.link)">{{ item.titulo }}</div>
+                }
+            </div>
+            <div id="area-video">
+                <iframe id="video" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=QI2wbM1vpsGtHkot"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

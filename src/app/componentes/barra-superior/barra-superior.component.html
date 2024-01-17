@@ -1,9 +1,8 @@
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
 <div id="main">
     <div id="container">
-        <span id="titulo">Dev Cursos</span>
+        <span id="titulo" (click)="aoClicarNoTitulo()">DEV CURSOS</span>
         @if (usuarioEstaLogado) {
         <button id="menu-usuario" (click)="aoClicarEmCadastrar()">JO</button>
         }@else {

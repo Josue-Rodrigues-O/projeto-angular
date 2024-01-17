@@ -1,10 +1,10 @@
 <div [className]="menuClasses" id="container">
-    <div class="container-menu-lateral">
-        <span class="material-symbols-outlined">home</span>
+    <div class="container-menu-lateral" (click)="aoClicarEmMeusCursos()">
+        <span class="material-symbols-outlined" id="home">home</span>
             <span class="texto-menu">Meus cursos</span>
     </div>
-    <div class="container-menu-lateral">
-        <span class="material-symbols-outlined">shopping_cart</span>
+    <div class="container-menu-lateral" (click)="aoClicarEmMarktplace()">
+        <span class="material-symbols-outlined" id="shopping_cart">shopping_cart</span>
             <span class="texto-menu">Marktplace</span>
     </div>
 </div>
