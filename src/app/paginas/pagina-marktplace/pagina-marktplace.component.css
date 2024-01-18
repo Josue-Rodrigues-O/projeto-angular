@@ -1,6 +1,6 @@
 #container {
     height: calc(100vh - 10vh);
-    padding: 80px;
+    padding: 6vh;
     padding-left: 6vw;
     padding-bottom: 0;
 }
@@ -15,10 +15,10 @@ header {
 input {
     margin: 0;
     padding: 0;
-    width: 400px;
+    width: 30vw;
     height: 100%;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 2vh;
     outline: 0px;
     border: 1px solid #DDDFE2;
     border-radius: 8px 0px 0px 8px;
