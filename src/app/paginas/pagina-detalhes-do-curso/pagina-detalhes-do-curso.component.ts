@@ -13,6 +13,15 @@ export class PaginaDetalhesDoCursoComponent {
     { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
     { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
     { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
+    { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
+    { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
+    { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
+    { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
+    { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
+    { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
+    { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
+    { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
+    { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
     { titulo: "Aula 04", link: "https://www.youtube.com/embed/0zLjVhHdOm8?si=zMIvtu3V0ysxQIas" }
   ]
 

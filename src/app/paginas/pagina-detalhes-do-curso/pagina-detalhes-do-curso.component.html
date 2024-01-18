@@ -1,5 +1,8 @@
 <div id="container">
-    <header id="cabecalho-lista-videos">Curso de HTML5 e CSS3 - Módulo 1</header>
+    <header>
+            Curso de HTML5 e CSS3 - Módulo 1
+            <span>Adicionar</span>
+    </header>
     <div id="area-curso">
         <div id="lista-videos">
             @for (item of listaDeVideos; track $index) {
@@ -12,22 +15,22 @@
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-                <h2>Titulo do video</h2>
+                <div id="rodape-video">
+                    <h2>Titulo do video</h2>
+                    <button id="botao-concluido" (click)="aoClicarEmConcluido()">
+                        {{concluidoTexto}}
+                    </button>
+                </div>
             </div>
             <div id="botoes">
                 <div id="navegar-entre-aulas">
                     <button id="botao-aula-anterior">
                         <span class="material-symbols-outlined">arrow_back_ios</span>
-                        aula anterior
                     </button>
-                    <button id="botao-proxima-aula">proxima aula
+                    <button id="botao-proxima-aula">
                         <span class="material-symbols-outlined">arrow_forward_ios</span>
                     </button>
                 </div>
-                <button id="botao-concluido" (click)="aoClicarEmConcluido()">
-                    <span class="material-symbols-outlined">{{concluidoIcone}}</span>
-                    {{concluidoTexto}}
-                </button>
             </div>
         </div>
     </div>

@@ -1,14 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    height: 10vh;
 }
 
 #container {
-    height: 60px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 0px 1px 10px -9px black;
     background-color: #FFFFFF;
 }
 
@@ -18,30 +17,33 @@
     color: white;
     width: 45px;
     height: 45px;
-    font-size: 20px;
-    margin: 10px;
+    font-size: 3vh;
+    margin: 1vw;
 }
 
 #botao-cadasrar {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     border-radius: 5px;
     color: black;
-    height: 45px;
-    font-size: 20px;
-    margin: 10px;
+    font-size: 3vh;
+    margin: 1vw;
     border: 0;
     background-color: unset;
 }
 
 #titulo {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 5vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 #titulo:hover {
@@ -49,12 +51,10 @@
 }
 
 .material-symbols-outlined:hover {
-    box-shadow: 0px 0px 15px -8px black;
     cursor: pointer;
 }
 
 #botao-cadasrar:hover {
-    box-shadow: 0px 0px 15px -8px black;
     cursor: pointer;
 }
 
@@ -62,5 +62,5 @@ app-menu-lateral {
     position: fixed;
     left: 0;
     bottom: 0;
-    top: 60px;
+    top: 10vh;
 }

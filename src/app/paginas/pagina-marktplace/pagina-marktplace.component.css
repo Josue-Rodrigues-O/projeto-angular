@@ -1,6 +1,7 @@
 #container {
-    height: calc(100% - 60px);
+    height: calc(100vh - 10vh);
     padding: 80px;
+    padding-left: 6vw;
     padding-bottom: 0;
 }
 
