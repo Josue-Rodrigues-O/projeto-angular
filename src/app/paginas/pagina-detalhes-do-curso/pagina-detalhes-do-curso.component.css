@@ -1,30 +1,9 @@
 #container {
-    height: calc(100% - 60px);
+    height: calc(100vh - 60px);
     padding: 0;
     padding-left: 65px;
-}
-
-#titulo-container,
-#botao-adicionar-container {
-    font-size: 40px;
-    margin: 20px;
-    padding: 0;
-    color: white;
-    background: none;
-}
-
-#corpo {
     display: flex;
     flex-direction: column;
-}
-
-#lista-titulo-videos {
-    max-height: 100vh;
-    overflow: auto;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 #cabecalho-lista-videos {
@@ -32,6 +11,22 @@
     padding-left: 15px;
     padding-right: 0;
     background-color: white;
+    height: 5%;
+}
+
+#area-curso {
+    display: flex;
+    height: 95%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#lista-videos {
+    overflow: auto;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 #titulo-video {
@@ -41,16 +36,57 @@
 }
 
 #area-video {
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+#video-container {
     width: 70%;
 }
 
-iframe{
-    width: 700px;
-    height: 400px;
+iframe {
+    width: 100%;
+    height: 90%;
 }
 
-#area-curso {
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#botoes {
+    display: block;
+    width: 30%;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#botao-aula-anterior,
+#botao-proxima-aula {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.material-symbols-outlined {
+    background: none;
+}
+
+#botao-concluido {
+    display: flex;
+    align-items: center;
+}
+
+#navegar-entre-aulas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
