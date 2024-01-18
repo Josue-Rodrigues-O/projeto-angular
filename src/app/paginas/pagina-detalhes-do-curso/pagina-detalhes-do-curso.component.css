@@ -51,7 +51,7 @@ header {
     display: flex;
     padding: 2%;
     padding-right: 0;
-    background-color: #181818;
+    background-color: #094067;
 }
 
 #video-container {
@@ -82,16 +82,22 @@ button {
     border: none;
     display: flex;
     align-items: center;
-    color: #181818;
-    background-color: #50c4cf;
+    color: #fffffe;
+    background-color: #3da9fc;
     height: 8vh;
 }
 
 #botao-aula-anterior,
 #botao-proxima-aula {
-    border: 0.2vh solid;
     width: 50%;
     justify-content: center;
+}
+
+#botao-aula-anterior {
+    border-right: 0.2vh solid;
+}
+#botao-proxima-aula {
+    border-left: 0.2vh solid;
 }
 
 .material-symbols-outlined {
@@ -113,7 +119,7 @@ button {
     width: 100%;
 }
 
-#botao-concluido { 
+#botao-concluido {
     width: 32%;
     display: flex;
     justify-content: center;

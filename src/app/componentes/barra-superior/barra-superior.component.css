@@ -8,7 +8,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #d8eefe;
 }
 
 #menu-usuario {
@@ -25,7 +25,7 @@
     padding-left: 1vw;
     padding-right: 1vw;
     border-radius: 5px;
-    color: black;
+    color: #094067;
     font-size: 3vh;
     margin: 1vw;
     border: 0;
@@ -44,6 +44,7 @@
     margin: 0;
     padding: 0;
     align-items: center;
+    color: #094067;
 }
 
 #titulo:hover {

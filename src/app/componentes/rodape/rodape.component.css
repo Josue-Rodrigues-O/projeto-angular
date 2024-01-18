@@ -1,10 +1,12 @@
 #container {
-    height: 50px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: #d8eefe;
     position: absolute;
     left: 0;
     right: 0;
+    bottom: initial;
+    font-size: 3vh;
 }

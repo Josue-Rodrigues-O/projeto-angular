@@ -6,6 +6,7 @@
 }
 
 header {
+    font-size: 4vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -21,13 +22,13 @@ input {
     padding-left: 2vh;
     outline: 0px;
     border: 1px solid #DDDFE2;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 1vh 0px 0px 1vh;
     border-right: none;
 }
 
 span {
-    font-size: 24px;
     font-weight: bold;
+    color: #094067;
 }
 
 #container-cursos-disponiveis {
@@ -38,22 +39,28 @@ span {
 
 #cursos-disponiveis {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
     justify-content: center;
     justify-items: center;
 }
 
 #lupa{
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 1vh 1vh 0px;
     border: 1px solid #DDDFE2;
     width: 19%;
     height: calc(100% + 2px);
     border-left: none;
+    font-size: 4vh;
 }
 
 #busca {
     margin: 0;
     padding: 0;
-    height: 43px;
+    height: 8vh;
     display: flex;
+}
+
+hr {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
