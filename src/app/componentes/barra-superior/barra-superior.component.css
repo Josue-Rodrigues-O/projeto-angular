@@ -6,9 +6,9 @@
 
 #container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    background-color: #d8eefe;
+    background-color: #001514;
 }
 
 #menu-usuario {
@@ -29,22 +29,24 @@
     font-size: 3vh;
     margin: 1vw;
     border: 0;
+    height: 8vh;
     background-color: unset;
 }
 
 #titulo {
     font-weight: bold;
     font-size: 5vh;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 1; */
     display: flex;
     margin: 0;
+    margin-left: 5%;
     padding: 0;
     align-items: center;
-    color: #094067;
+    color: #fffffe;
 }
 
 #titulo:hover {
@@ -56,6 +58,7 @@
 }
 
 #botao-cadasrar:hover {
+    background-color: #d8eefe;
     cursor: pointer;
 }
 

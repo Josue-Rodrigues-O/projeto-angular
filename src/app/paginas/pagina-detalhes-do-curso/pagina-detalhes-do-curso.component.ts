@@ -8,42 +8,44 @@ import { Component } from '@angular/core';
   styleUrl: './pagina-detalhes-do-curso.component.css'
 })
 export class PaginaDetalhesDoCursoComponent {
+  concluido: boolean = false;
+  concluidoTexto: string = "Marcar como concluido"
+  
   listaDeVideos = [
-    { titulo: "Apresentação do curso", link: "https://www.youtube.com/embed/Ejkb_YpuHWs?si=QI2wbM1vpsGtHkot" },
-    { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
-    { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
-    { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
-    { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
-    { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
-    { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
-    { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
-    { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
-    { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
-    { titulo: "Aula 01", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib" },
-    { titulo: "Aula 02", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR" },
-    { titulo: "Aula 03", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6" },
-    { titulo: "Aula 04", link: "https://www.youtube.com/embed/0zLjVhHdOm8?si=zMIvtu3V0ysxQIas" }
+    { id: 1, titulo: "Começa aqui o novo @CursoemVideo de HTML5 e CSS3", link: "https://www.youtube.com/embed/Ejkb_YpuHWs?si=QI2wbM1vpsGtHkot", concluido: false },
+    { id: 2, titulo: "O que vamos aprender no módulo 01? - @Curso em Vídeo HTML5 + CSS3", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib", concluido: false },
+    { id: 3, titulo: "Precisamos fazer um acordo - @Curso em Vídeo HTML5 e CSS3", link: "https://www.youtube.com/embed/VfIXgGJWLvA?si=BAnlo3o5-xxRQyVR", concluido: false },
+    { id: 4, titulo: "Será que este curso é para mim? - @Curso em Vídeo HTML5 e CSS3", link: "https://www.youtube.com/embed/57wyfS560Uk?si=xOZ3CwonVPNu5Mq6", concluido: false }
   ]
 
-  concluido: boolean = false;
-  concluidoIcone: string = "radio_button_unchecked";
-  concluidoTexto: string = "Marcar como concluido"
+  TituloVideo: string = this.listaDeVideos[0].titulo;
+  idVideoSelecionado = 1;
 
-  aoClicarNoTitulo(link: any) {
+  aoClicarNoTitulo(item: any) {
     const video = document.getElementById("video")
-    
-    video?.setAttribute("src", link)
+    this.idVideoSelecionado = item.id;
+    video?.setAttribute("src", item.link)
+    this.concluido = item.concluido
+    this.TituloVideo = item.titulo
+
+    if (item.concluido) {
+      this.concluidoTexto = "Concluido"
+    } else {
+      this.concluidoTexto = "Marcar como concluido"
+    }
   }
 
   aoClicarEmConcluido() {
-    if (this.concluido) {
-      this.concluidoIcone = "task_alt";
-      this.concluido = false;
+    if (!this.concluido) {
+      let index = this.listaDeVideos.findIndex(x => x.id == this.idVideoSelecionado);
+      this.listaDeVideos[index].concluido = !this.concluido;
       this.concluidoTexto = "Concluido"
-    }else{
-      this.concluidoIcone = "radio_button_unchecked";
       this.concluido = true;
+    } else {
+      let index = this.listaDeVideos.findIndex(x => x.id == this.idVideoSelecionado);
+      this.listaDeVideos[index].concluido = !this.concluido;
       this.concluidoTexto = "Marcar como concluido"
+      this.concluido = false;
     }
   }
 

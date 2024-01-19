@@ -11,7 +11,7 @@
     width: 30vw;
     height: 60vh;
     flex-direction: column;
-    background-color: #094067;
+    background-color: #272838;
     align-items: center;
     justify-content: center;
 }
@@ -33,7 +33,7 @@ input {
     padding-left: 2vh;
     outline: 0px;
     border-radius: 2vh;
-    border: 1px solid #DDDFE2;
+    border: thin solid white;
 }
 
 button {
@@ -46,7 +46,12 @@ button {
     width: 86%;
     height: 8vh;
     margin: 2vh;
+    margin-top: 0;
     padding: 0;
+}
+
+button:hover {
+    background-color: #4f4783;
 }
 
 a{
@@ -56,5 +61,5 @@ a{
 
 h3{
     font-size: 3.5vh;
-    color: #fffffe;
+    color: white;
 }

@@ -1,7 +1,6 @@
 #container {
     height: calc(100vh - 10vh);
     padding: 6vh;
-    padding-left: 6vw;
     padding-bottom: 0;
 }
 h1 {
@@ -14,7 +13,7 @@ h1 {
     color: #094067;
 }
 hr {
-    margin-top: 1vh;
+    margin-top: 2vh;
     margin-bottom: 1vh;
 }
 
@@ -51,4 +50,8 @@ hr {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+
+#button-adicionar:hover{
+    cursor: pointer;
 }
