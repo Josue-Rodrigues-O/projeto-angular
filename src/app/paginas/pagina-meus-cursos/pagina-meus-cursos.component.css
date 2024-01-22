@@ -3,6 +3,7 @@
     padding: 6vh;
     padding-bottom: 0;
 }
+
 h1 {
     padding: 0;
     margin: 0;
@@ -10,20 +11,21 @@ h1 {
     height: 8vh;
     display: flex;
     align-items: center;
-    color: #094067;
-}
+    color: white;
+} 
+
 hr {
     margin-top: 2vh;
     margin-bottom: 1vh;
 }
 
-#container-meus-cursos{
+#container-meus-cursos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#meus-cursos{
+#meus-cursos {
     display: grid;
     grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
     justify-content: center;
@@ -35,7 +37,7 @@ hr {
     display: flex;
     font-weight: bold;
     color: #fffffe;
-    background-color: #3da9fc;
+    background-color: #6b0504;
     border-radius: 50%;
     border: none;
     width: 10vh;
@@ -52,6 +54,8 @@ hr {
     justify-content: flex-end;
 }
 
-#button-adicionar:hover{
+#button-adicionar:hover {
     cursor: pointer;
+    background-color: #840805;
+    box-shadow: 0px 0px 7px -2px #840805;
 }

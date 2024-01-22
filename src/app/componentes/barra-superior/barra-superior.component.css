@@ -8,42 +8,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #001514;
-}
-
-#menu-usuario {
-    border-radius: 20%;
-    background-color: black;
-    color: white;
-    width: 45px;
-    height: 45px;
-    font-size: 3vh;
-    margin: 1vw;
-}
-
-#botao-cadasrar {
-    padding-left: 1vw;
-    padding-right: 1vw;
-    border-radius: 5px;
-    color: #094067;
-    font-size: 3vh;
-    margin: 1vw;
-    border: 0;
-    height: 8vh;
-    background-color: unset;
+    background-color: #170000;
 }
 
 #titulo {
     font-weight: bold;
     font-size: 5vh;
-    /* position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-    z-index: 1; */
     display: flex;
     margin: 0;
-    margin-left: 5%;
+    margin-left: 2%;
     padding: 0;
     align-items: center;
     color: #fffffe;
@@ -53,18 +26,25 @@
     cursor: pointer;
 }
 
-.material-symbols-outlined:hover {
-    cursor: pointer;
-}
-
-#botao-cadasrar:hover {
-    background-color: #d8eefe;
-    cursor: pointer;
-}
-
 app-menu-lateral {
     position: fixed;
     left: 0;
     bottom: 0;
     top: 10vh;
+}
+
+button {
+    width: 8vh;
+    height: 8vh;
+    margin-right: 2%;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 3vh;
+    border: none;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(214, 206, 206);
 }

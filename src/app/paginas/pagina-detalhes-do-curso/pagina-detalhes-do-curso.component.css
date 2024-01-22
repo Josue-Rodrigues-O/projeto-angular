@@ -11,8 +11,8 @@ header {
     padding: 1.5%;
     padding-left: 0;
     padding-right: 0;
-    background-color: #f9f8f8c4;
-    color: #111111;
+    background-color: #212121;
+    color: white;
     height: 5%;
     display: flex;
     justify-content: space-between;
@@ -29,15 +29,15 @@ header {
 }
 
 #lista-videos {
-    color: #d8eefe;
+    color: white;
     overflow: auto;
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: #094067;
+    background-color: rgb(49, 48, 48);
     /* margin: 2%; */
-    margin: 0 0 0 2%;
+    /* margin: 0 0 0 2%; */
 }
 
 #titulo-video {
@@ -49,8 +49,7 @@ header {
 }
 
 #container-titulo-video:hover {
-    background-color: #d8eefe;
-    color: #094067;
+    background-color: #272727;
     cursor: pointer;
 }
 
@@ -64,12 +63,12 @@ header {
 
 #area-video {
     height: 90%;
-    width: 60%;
+    width: 65%;
     display: flex;
     padding: 2%;
-    padding-right: 0;
+    /* padding-right: 0; */
     margin: 0 0 0 0;
-    background-color: #fffffe;
+    background-color: black;
 }
 
 #video-container {
@@ -87,7 +86,7 @@ h2 {
     margin: 0;
     padding: 0;
     font-size: 3.5vh;
-    color: #094067;
+    color: white;
     max-width: 70%;
 }
 
@@ -96,8 +95,8 @@ button {
     border: none;
     display: flex;
     align-items: center;
-    color: #094067;
-    background-color: #fffffe;
+    color: white;
+    background-color: #840805;
     height: 8vh;
 }
 
@@ -120,8 +119,8 @@ button:hover {
 }
 
 #botao-concluido {
-    width: 32%;
+    width: 26%;
     display: flex;
     justify-content: center;
-    font-size: 3vh;
+    font-size: 2.8vh;
 }
