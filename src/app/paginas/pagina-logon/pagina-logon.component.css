@@ -3,7 +3,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-image: url("https://img.freepik.com/fotos-gratis/uma-pessoa-digitando-no-laptop-no-escritorio-gerado-pela-ia_188544-39272.jpg?w=740&t=st=1705694682~exp=1705695282~hmac=127c10238bdf3bf05270ed4837c4c731f3ec8fe15fd99ac4dd06fb6ae2d59750");
+    background-image:
+        linear-gradient(rgba(29, 4, 4, 0.5),rgba(46, 0, 0, 0.5)),
+        url("https://img.freepik.com/fotos-gratis/perto-das-maos-do-homem-afro-americano-digitando-no-teclado-do-computador-na-sala-de-estar-usando-a-comunicacao-on-line-da-web-de-internet-do-escritorio-em-casa-trabalhador-remoto-trabalhando-em-casa_482257-30170.jpg?w=826&t=st=1705943742~exp=1705944342~hmac=7ebb9e476ef7e9335d2a3e0b0b4a3167566102a9e34f630ebf98b149bfc22543");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -60,7 +62,7 @@ button:hover {
     background-color: #840805;
 }
 
-a{
+a {
     margin-top: 1vh;
     text-decoration: none;
     font-size: 2.5vh;
@@ -71,7 +73,7 @@ a:hover {
     color: #6b0504;
 }
 
-h3{
+h3 {
     font-size: 3.5vh;
     color: #001514;
 }

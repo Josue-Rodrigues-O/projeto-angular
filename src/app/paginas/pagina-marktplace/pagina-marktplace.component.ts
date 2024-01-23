@@ -10,6 +10,7 @@ import { CardCursoComponent } from "../../componentes/card-curso/card-curso.comp
     styleUrl: './pagina-marktplace.component.css',
     imports: [CardCursosMarketplaceComponent, RodapeComponent, CardCursoComponent]
 })
-export class PaginaMarktplaceComponent {
 
+export class PaginaMarktplaceComponent {
+    listaCursos = [];
 }

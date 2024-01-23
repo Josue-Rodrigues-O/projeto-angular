@@ -20,14 +20,14 @@ input {
     margin: 0;
     padding-left: 2vh;
     outline: 0px;
-    border: 0.4vh solid #170000;
+    border: 0.4vh solid white;
     border-radius: 2vh 0px 0px 2vh;
     border-right: none;
 }
 
 span {
     font-weight: bold;
-    color: #170000;
+    color: white;
 }
 
 #container-cursos-disponiveis {
@@ -46,12 +46,12 @@ span {
 
 #lupa{
     border-radius: 0px 2vh 2vh 0px;
-    border: 0.4vh solid #170000;
+    border: 0.4vh solid #840805;
     width: 19%;
     height: calc(100% + 0.7vh);
     border-left: none;
     font-size: 4vh;
-    background-color: #170000;
+    background-color: #840805;
     color: #fffffe;
 }
 
