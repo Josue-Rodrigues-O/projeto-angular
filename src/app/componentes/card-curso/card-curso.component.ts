@@ -9,9 +9,13 @@ import { Router } from '@angular/router';
   styleUrl: './card-curso.component.css'
 })
 export class CardCursoComponent {
-
+  mostrarModal = false;
   constructor(private route: Router) {}
   aoClicarNoCard() {
     this.route.navigate(['detalhes-do-curso'])
+  }
+
+  trocarValor(){
+    this.mostrarModal = !this.mostrarModal
   }
 }

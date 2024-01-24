@@ -10,7 +10,10 @@ import { Component } from '@angular/core';
 export class PaginaDetalhesDoCursoComponent {
   concluido: boolean = false;
   concluidoTexto: string = "Marcar como concluido"
-  
+  adicionado: boolean = false
+  adicionarTexto: string = "Adicionar aos meus cursos"
+  classeBotaoAdicionar = "botao-verde"
+
   listaDeVideos = [
     { id: 1, titulo: "Começa aqui o novo @CursoemVideo de HTML5 e CSS3", link: "https://www.youtube.com/embed/Ejkb_YpuHWs?si=QI2wbM1vpsGtHkot", concluido: false },
     { id: 2, titulo: "O que vamos aprender no módulo 01? - @Curso em Vídeo HTML5 + CSS3", link: "https://www.youtube.com/embed/jgQjeqGRdgA?si=AbfflSu_TigL-aib", concluido: false },
@@ -49,5 +52,15 @@ export class PaginaDetalhesDoCursoComponent {
     }
   }
 
-
+  aoClicarEmAdicionar() {
+    if(this.adicionado){
+      this.adicionarTexto = "Adicionar aos meus cursos"
+      this.classeBotaoAdicionar = "botao-verde";
+      this.adicionado = !this.adicionado
+    }else{
+      this.adicionarTexto = "Remover dos meus cursos"
+      this.classeBotaoAdicionar = "botao-vermelho";
+      this.adicionado = !this.adicionado
+    }
+  }
 }

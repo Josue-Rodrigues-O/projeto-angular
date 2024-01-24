@@ -1,17 +1,28 @@
 <div id="container">
-
     <div id="area-curso">
         <div id="area-video">
             <div id="video-container">
+                <h2>{{TituloVideo}}</h2>
                 <iframe id="video" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=QI2wbM1vpsGtHkot"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
                 <div id="rodape-video">
-                    <h2>{{TituloVideo}}</h2>
-                    <button id="botao-concluido" (click)="aoClicarEmConcluido()">
-                        {{concluidoTexto}}
-                    </button>
+                    <div id="estrelas">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div id="botoes">
+                        <button id="botao-concluido" (click)="aoClicarEmConcluido()">
+                            {{concluidoTexto}}
+                        </button>
+                        <button id="botao-adicionar" (click)="aoClicarEmAdicionar()" [className]="classeBotaoAdicionar">
+                            {{adicionarTexto}}
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

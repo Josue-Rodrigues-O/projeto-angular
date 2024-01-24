@@ -18,7 +18,7 @@ export class PaginaLoginComponent {
   }
 
   aoClicarEmAcessar() {
-    // this.route.navigate(['/meus-cursos'])
-    this.service.obterCursos()
+    this.route.navigate(['/meus-cursos'])
+    // this.service.obterCursos()
   }
 }
