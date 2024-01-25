@@ -17,52 +17,14 @@
     cursor: pointer;
     background-color: #ccc8c8;
     box-shadow: 0px 0px 7px -2px gray;
-}
-
-span {
-    font-weight: bold;
-    font-size: 4vh;
-    color: white;
+    transform: translateY(-10px);
 }
 
 .div-titulo {
-    height: 78%;
     padding: 4%;
     display: flex;
     align-items: flex-end;
-}
-
-.div-button {
-    width: 98%;
-    height: 22%;
-    padding: 1%;
-    padding-top: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.material-symbols-outlined {
-    background: none;
+    font-weight: bold;
+    font-size: 4vh;
     color: white;
-    font-size: 5vh;
-}
-
-.material-symbols-outlined:hover {
-    font-size: 6vh;
-}
-
-.modal {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px #333;
-    width: 15vw;
-    height: 30vh;
-    position: absolute;
-    padding: 24px;
-    margin-left: 18%;
-    margin-top: 1.5%;
-}
-
-#espaco {
-    width: 100%;
 }
