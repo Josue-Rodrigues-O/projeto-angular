@@ -15,7 +15,6 @@
     width: 40%;
     height: 70%;
     font-family: 'DM Serif Display', serif;
-    /* font-family: 'Inconsolata', monospace; */
 }
 
 #div-login {
@@ -47,8 +46,14 @@ input {
     padding-left: 2vh;
     outline: 0px;
     border-radius: 2vh;
-    border: thin solid white;
-    background-color: #d6d2d2;
+    border: 0.1vh solid rgb(221, 221, 221);
+    /* background-color: #d6d2d2; */
+    background-color: #ffffff;
+
+}
+
+input:focus {
+    box-shadow: 0px 0px 3vh 0vh blue;
 }
 
 button {

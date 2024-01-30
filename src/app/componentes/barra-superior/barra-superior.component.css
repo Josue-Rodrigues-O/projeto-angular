@@ -8,7 +8,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #170000;
+    /* background-color: #170000; */
+    background-color: #fffffe;
+    height: 80px;
+}
+
+.logo{
+    border-radius: 3vh;
 }
 
 #titulo {
